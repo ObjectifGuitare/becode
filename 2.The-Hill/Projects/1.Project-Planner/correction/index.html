@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script defer src="./index.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <table>
+      <tr>
+        <td>Name</td>
+        <td><input type="text" id="task_name"></td>
+      </tr>
+      <tr>
+        <td>Description</td>
+        <td><input type="text" id="task_description"></td>
+      </tr>
+      <tr>
+        <td>Status</td>
+        <td>
+          <select id="task_status">
+            <option value="0">To do</option>
+            <option value="1">Doing</option>
+            <option value="2">Done</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Date</td>
+        <td><input type="date" id="task_date"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button id="task_create">Add a task</button></td>
+      </tr>
+    </table>
+
+    <section id="task_list"></section>
+  </main>
+
+  <section class="edit-task-overlay">
+    <section class="edit-task">
+      <table>
+        <tr>
+          <td>Name</td>
+          <td><input type="text" id="edit_task_name"></td>
+        </tr>
+        <tr>
+          <td>Description</td>
+          <td><input type="text" id="edit_task_description"></td>
+        </tr>
+        <tr>
+          <td>Status</td>
+          <td>
+            <select id="edit_task_status">
+              <option value="0">To do</option>
+              <option value="1">Doing</option>
+              <option value="2">Done</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Date</td>
+          <td><input type="date" id="edit_task_date"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button id="edit_task_create">Edit this task</button></td>
+        </tr>
+      </table>
+    </section>
+  </section>
+
+</body>
+</html>
